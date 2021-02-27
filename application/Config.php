@@ -8,7 +8,7 @@ define("imgProducto", "ProductoSinImagen.png");
 
 
 //controlador por defecto de nuestra aplicacion
-define('BASE_URL', 'https://dashboard.heroku.com/amoblando-mvc/');  
+define('BASE_URL', 'https://heroku.com/amoblando-mvc/');  
 define('DEFAULT_CONTROLLER', 'index');
 define('DEFAULT_LAYOUT', 'layout1');
 
