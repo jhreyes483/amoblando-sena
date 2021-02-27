@@ -16,7 +16,11 @@ $rol = [ 1=>'Administrador',2=>'Cliente',3=>'Empleado'];
 <?php if(isset($_SESSION['venta'])){
 ?>
             <div class="dropdown show">
-               <li class="nav-item" id="dropdownMenuLink" data-toggle="dropdown"><a class="nav-link js-scroll-trigger <?= (isset($_GET['c']) &&  in_array($_GET['c'] ,['9'] ) ? 'text-warning':'' )  ?> " href="#" role="button" aria-haspopup="true" aria-expanded="false">CARRITO DE COMPAS</a></li>
+               <li class="nav-item" id="dropdownMenuLink" data-toggle="dropdown">
+               <a class="nav-link js-scroll-trigger  " href="#" role="button" aria-haspopup="true" aria-expanded="false">
+               <i class="fa fa-shopping-cart"></i>
+               CARRITO DE COMPAS</a>
+               </li>
             </div>
 
 <?php
