@@ -15,7 +15,7 @@ $rol = [ 1=>'Administrador',2=>'Cliente',3=>'Empleado'];
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"><?=(isset($_SESSION['usuario'])) && $rol[$_SESSION['usuario']['fk_rol']]  ?></a></li>
 
             <div class="dropdown show">
-               <li class="nav-item" id="dropdownMenuLink" data-toggle="dropdown"><a class="nav-link js-scroll-trigger <?= (in_array($_GET['c'] ,['8','6','7'] ) ? 'text-warning':'' )  ?> " href="#" role="button" aria-haspopup="true" aria-expanded="false">SALAS</a></li>
+               <li class="nav-item" id="dropdownMenuLink" data-toggle="dropdown"><a class="nav-link js-scroll-trigger <?= ( isset($_GET['c']) && in_array($_GET['c'] ,['8','6','7'] ) ? 'text-warning':'' )  ?> " href="#" role="button" aria-haspopup="true" aria-expanded="false">SALAS</a></li>
                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <a class="dropdown-item" href="<?=BASE_URL.'index/catalogo?c=8'?>">SALA L</a>
                   <a class="dropdown-item" href="<?=BASE_URL.'index/catalogo?c=6'?>">SOFA CAMA</a>
@@ -23,13 +23,13 @@ $rol = [ 1=>'Administrador',2=>'Cliente',3=>'Empleado'];
                </div>
             </div>
             <div class="dropdown show">
-               <li class="nav-item" id="dropdownMenuLink" data-toggle="dropdown"><a class="nav-link js-scroll-trigger <?= (in_array($_GET['c'] ,['9'] ) ? 'text-warning':'' )  ?> " href="#" role="button" aria-haspopup="true" aria-expanded="false">ALCOBAS</a></li>
+               <li class="nav-item" id="dropdownMenuLink" data-toggle="dropdown"><a class="nav-link js-scroll-trigger <?= (isset($_GET['c']) &&  in_array($_GET['c'] ,['9'] ) ? 'text-warning':'' )  ?> " href="#" role="button" aria-haspopup="true" aria-expanded="false">ALCOBAS</a></li>
                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <a class="dropdown-item" href="<?=BASE_URL.'index/catalogo?c=9'?>">CAMAS</a>
                </div>
             </div>
             <div class="dropdown show">
-               <li class="nav-item " id="dropdownMenuLink" data-toggle="dropdown"><a class="nav-link js-scroll-trigger <?= (in_array($_GET['c'] ,['10', '11','12','13'] ) ? 'text-warning':'' )  ?> " href="#" role="button" aria-haspopup="true" aria-expanded="false">COMEDORES</a></li>
+               <li class="nav-item " id="dropdownMenuLink" data-toggle="dropdown"><a class="nav-link js-scroll-trigger <?= ( isset($_GET['c']) &&  in_array($_GET['c'] ,['10', '11','12','13'] ) ? 'text-warning':'' )  ?> " href="#" role="button" aria-haspopup="true" aria-expanded="false">COMEDORES</a></li>
                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <a class="dropdown-item" href="<?=BASE_URL.'index/catalogo?c=10'?>">JUEGO DE COMEDORES</a>
                   <a class="dropdown-item" href="<?=BASE_URL.'index/catalogo?c=11'?>">MESAS </a>
