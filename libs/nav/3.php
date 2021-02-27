@@ -13,6 +13,15 @@ $rol = [ 1=>'Administrador',2=>'Cliente',3=>'Empleado'];
          <ul class="navbar-nav text-uppercase ml-auto">
            
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"><?=(isset($_SESSION['usuario']) ? $rol[$_SESSION['usuario']['fk_rol']]: '')  ?></a></li>
+<?php if(isset($_SESSION['venta'])){
+?>
+            <div class="dropdown show">
+               <li class="nav-item" id="dropdownMenuLink" data-toggle="dropdown"><a class="nav-link js-scroll-trigger <?= (isset($_GET['c']) &&  in_array($_GET['c'] ,['9'] ) ? 'text-warning':'' )  ?> " href="#" role="button" aria-haspopup="true" aria-expanded="false">CARRITO DE COMPAS</a></li>
+            </div>
+
+<?php
+}
+?>
 
             <div class="dropdown show">
                <li class="nav-item" id="dropdownMenuLink" data-toggle="dropdown"><a class="nav-link js-scroll-trigger <?= ( isset($_GET['c']) && in_array($_GET['c'] ,['8','6','7'] ) ? 'text-warning':'' )  ?> " href="#" role="button" aria-haspopup="true" aria-expanded="false">SALAS</a></li>
