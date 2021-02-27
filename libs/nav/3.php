@@ -17,11 +17,9 @@ $rol = [ 1=>'Administrador',2=>'Cliente',3=>'Empleado'];
 ?>
             <div class="dropdown show">
                <li class="nav-item" id="dropdownMenuLink" data-toggle="dropdown">
-               <a class="nav-link js-scroll-trigger"  
-               href="<?= BASE_URL ?>index/carrito" role="button" aria-haspopup="true" aria-expanded="false">
-               <i class="fa fa-shopping-cart">
-               </i>
-               CARRITO DE COMPAS</a>
+               <a class="dropdown-item"  href="<?= BASE_URL ?>index/carrito">
+               <i class="fa fa-shopping-cart"></i>
+               CARRITO DE COMPRAS</a>
                </li>
             </div>
 
